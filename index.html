@@ -1,32 +1,34 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Nuevos métodos de reconstrucción en braquiterapia</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>Nuevos métodos de reconstrucción en braquiterapia</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section objetivo='Titulo'>
-					<section>
-						<h2>Tesis Antonio Otal</h1>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section objetivo='Titulo'>
+				<section>
+					<h2>Tesis Antonio Otal</h1>
 						<h3>Versión 1.0</h3>
 					</section>
 				</section>
@@ -47,198 +49,214 @@
 				<section objetivo='Resonancia magnética nuclear'>
 					<section objetivo='nombre del capítulo'>
 						<h2>Resonancia magnética nuclear</h2>
-					</section>
-					<section objetivo='objetivos del capítulo'>
-						<ul>
-							<li>Descripción de los fundamentos de la resonancia magnética</li>
-							<li>Modalidades usadas en ginecología (T1,T2 y adquisiciones 3D)
-								<p>
-									Aquí se pueden introducir las recomendaciones de ESTRO
-								</p>
-							</li>
-							<li>Reconstrucción de aplicadores RMN vs CT</li>
-							<li>Problemas específicos de la reconstrucción en RMN</li>
-						</ul>
-					</section>
 				</section>
-				<section objetivo='Mallas de polígonos y transformaciones afines'>
-					 <section objetivo='nombre del capítulo'>
-					     <h2>Mallas de polígonos y transformaciones afines</h2>
-					 </section>
-					 <section objetivo='Objetivos del capítulo'>
-					     <p>
-					       Creo que como vamos a estar dando vueltas implícitamente a estos temas durante toda la tesis, no sería mala idea poner aquí todo lo relacionado con geometrías voxelizadas, formas de representarlas, una idea básica de geometría diferencial discreta (muy por encima) y como se forman conjuntos de esas geometrías.
-					     </p>
-					 </section>
+				<section objetivo='objetivos del capítulo'>
+					<ul>
+						<li>Descripción de los fundamentos de la resonancia magnética</li>
+						<li>Modalidades usadas en ginecología (T1,T2 y adquisiciones 3D)
+							<p>
+								Aquí se pueden introducir las recomendaciones de ESTRO
+							</p>
+						</li>
+						<li>Reconstrucción de aplicadores RMN vs CT</li>
+						<li>Problemas específicos de la reconstrucción en RMN</li>
+					</ul>
 				</section>
-				<section objetivos='Librerías de aplicadores'>
-					<section objetivo='nombre del capítulo'>
-						<h2>Métodos de reconstrucción en braquiterapia:Librerías de Aplicadores</h2>
-					</section>
-					<section objetivo='Descripción del capítulo'>
-						<p>
-							En primer lugar, habría que describir los métodos de reconstrucción en braquiterapia ginecológica (no se con qué detalle o
-							si debería ir en un capítulo anterior)
-							Una vez explicado lo anterior, ya se pasaría a describir qué es una librería de aplicadores y cómo funcionan
-							las dos librerías con las que hemos trabajado: La de Elekta y la de Bebig. A lo mejor habría que nombrar la de Varian, (o no),
-							ya que desconozco cómo funciona.
-						</p>
-					</section>
-					<section objetivos='Reconstrucción directa'>
-						<p>
-							Para describir la reconstrucción directa, podemos echar mano de la descripción de las recomendaciones GEC-ESTRO.
-						</p>
-					</section>
-					<section objetivos='Librerías de aplicadores I'>
-						<p>
-							Podemos seguir aquí con lo descrito en las recomendaciones anteriores sobre librerías y ya empezar a enlazar con las soluciones de Elekta y Bebig
-						</p>
-					</section>
-					<section objetivo='Librerias de aplicadores II'>
-						<ul>
-							<li>
-								A partir de qué elementos se construye
-							</li>
-							<li>
-								Relaciones entre esos elementos
-							</li>
-							<li>
-								Cómo se posicionan con respecto a la secuencia de imágenes del paciente
-							</li>
-							<li>
-								Limitaciones y cosas a mejorar
-							</li>
-						</ul>
-					</section>
+			</section>
+			<section objetivo='Mallas de polígonos y transformaciones afines'>
+				<section objetivo='nombre del capítulo'>
+					<h2>Mallas de polígonos y transformaciones afines</h2>
 				</section>
-				<section objetivos='Soluciones para aplicadores rígidos'>
-					<section objetivos='título'>
-						<h2>Soluciones para aplicadores rígidos</h2>
-					</section>
-					<section objetivos='Qué aplicadores consideramos rígidos'>
-						<ul>
-							<li>
-								Vienna. Tanto de Bebig como de Elekta
-							</li>
-							<li>
-								Aplicador Benidorm
-							</li>
-						</ul>
-					</section>
-					<section objetivos='Introducción sobre la reconstrucción de agujas'>
-						<h4>
+				<section objetivo='Objetivos del capítulo'>
+					<p>
+						Creo que como vamos a estar dando vueltas implícitamente a estos temas durante toda la tesis, no sería mala idea poner aquí todo lo relacionado con geometrías voxelizadas, formas de representarlas, una idea básica de geometría diferencial discreta (muy
+						por encima) y como se forman conjuntos de esas geometrías.
+					</p>
+				</section>
+			</section>
+			<section objetivos='Librerías de aplicadores'>
+				<section objetivo='nombre del capítulo'>
+					<h2>Métodos de reconstrucción en braquiterapia:Librerías de Aplicadores</h2>
+				</section>
+				<section objetivo='Descripción del capítulo'>
+					<p>
+						En primer lugar, habría que describir los métodos de reconstrucción en braquiterapia ginecológica (no se con qué detalle o si debería ir en un capítulo anterior) Una vez explicado lo anterior, ya se pasaría a describir qué es una librería de aplicadores
+						y cómo funcionan las dos librerías con las que hemos trabajado: La de Elekta y la de Bebig. A lo mejor habría que nombrar la de Varian, (o no), ya que desconozco cómo funciona.
+					</p>
+				</section>
+				<section objetivos='Reconstrucción directa'>
+					<p>
+						Para describir la reconstrucción directa, podemos echar mano de la descripción de las recomendaciones GEC-ESTRO.
+					</p>
+				</section>
+				<section objetivos='Librerías de aplicadores I'>
+					<p>
+						Podemos seguir aquí con lo descrito en las recomendaciones anteriores sobre librerías y ya empezar a enlazar con las soluciones de Elekta y Bebig
+					</p>
+				</section>
+				<section objetivo='Librerias de aplicadores II'>
+					<ul>
+						<li>
+							A partir de qué elementos se construye
+						</li>
+						<li>
+							Relaciones entre esos elementos
+						</li>
+						<li>
+							Cómo se posicionan con respecto a la secuencia de imágenes del paciente
+						</li>
+						<li>
+							Limitaciones y cosas a mejorar
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section objetivos='Soluciones para aplicadores rígidos'>
+				<section objetivos='título'>
+					<h2>Soluciones para aplicadores rígidos</h2>
+				</section>
+				<section objetivos='Qué aplicadores consideramos rígidos'>
+					<ul>
+						<li>
+							Vienna. Tanto de Bebig como de Elekta
+						</li>
+						<li>
+							Aplicador Benidorm
+						</li>
+					</ul>
+				</section>
+				<section objetivos='Introducción sobre la reconstrucción de agujas'>
+					<h4>
 							Explicación del método del <i>"free-lenght"</i>
 						</h4>
-							<ul>
-								<li>
-									En qué consiste
-								</li>
-								<li>
-									Cómo se utiliza fuera de las librerías
-								</li>
-								<li>
-									Comentarios  sobre la curvatura de las agujas
-								</li>
-							</ul>
-					</section>
+					<ul>
+						<li>
+							En qué consiste
+						</li>
+						<li>
+							Cómo se utiliza fuera de las librerías
+						</li>
+						<li>
+							Comentarios sobre la curvatura de las agujas
+						</li>
+					</ul>
 				</section>
-				<section objetivos='Aplicadores semi-rígidos'>
-					<section objetivos='Título del capítulo'>
-						<h2>Aplicadores semi-rígidos (modelado)</h2>
-					</section>
-					<section objetivos='Qué queremos decir con alicadores semi-rígidos'>
-						<p>
-							En esta parte incluiríamos todo lo relacionado en un primer lugar lo que hicimos con el fletcher de Bebig: Como de los planos constructivos, pasamos a un modelo parametrizable del mismo y hacer una reconstrucción. Después, vendría toda la parte del utrecht de Elekta, (lo del artículo de las librerías, vamos).
-						</p>
-					</section>
-					<section objetivos='contenido del capítulo'>
-						<ul>
-							<li>
-								En primer lugar, describiríamos toda la parte del Utrecht que se explicó en el artículo sobre las librerías
-							</li>
-							<li>
-								En otra parte, todo el trabajo hecho para Bebig con la parametrización del fletcher de Mick
-							</li>
-							<li>
-								Quizá sería mejor invertir el orden de los puntos anteriores, ya que, aunque cronológicamente el Fletcher fue después, podemos añadir al utrecht la misma parametrización que hicimos para el Fletcher
-							</li>
-						</ul>
-					</section>
+			</section>
+			<section objetivos='Aplicadores semi-rígidos'>
+				<section objetivos='Título del capítulo'>
+					<h2>Aplicadores semi-rígidos (modelado)</h2>
 				</section>
-				<section objetivos='Marcadores en resonancia'>
-					<section objetivos='Título del capítulo'>
-						<h2>Marcadores en resonancia</h2>
-					</section>
-					<section objetivos='Materiales marcadores en resonancia'>
-						<p>
-							Hablar de los materiales visibles en resonancia y de las soluciones comerciales que existen
-						</p>
-					</section>
-					<section objetivos='dummies en resonancia y el problema de las agujas'>
-						<ul>
-							<li>
-								En primer lugar, nombrar las dummies para el Utrecht
-							</li>
-							<li>
-								Explicar el problema que aparece al intentar hacer lo mismo para agujas
-							</li>
-						</ul>
-					</section>
-					<section objetivos='concepto de dummies puntuales'>
-						<p>
-							Explicar que, con la información contenida en las librerías, sumado a dummies puntuales, podemos posicionar aplicadores sin verlos completamente
-						</p>
-					</section>
-					<section objetivos='Modelos e impresión 3D'>
-						<p>
-							Unas pinceladas sobre diseño 3D unido a las ventajas que nos ofrece la impresión 3d para prototipado o para dummies específicas para aplicadores en braquiterapia
-						</p>
-					</section>
+				<section objetivos='Qué queremos decir con alicadores semi-rígidos'>
+					<p>
+						En esta parte incluiríamos todo lo relacionado en un primer lugar lo que hicimos con el fletcher de Bebig: Como de los planos constructivos, pasamos a un modelo parametrizable del mismo y hacer una reconstrucción. Después, vendría toda la parte del utrecht
+						de Elekta, (lo del artículo de las librerías, vamos).
+					</p>
 				</section>
-				<section objetivos='Planes Virtuales'>
-					<section objetivos='Título'>
-						<h2>Planes Virtuales</h2>
-					</section>
-					<section objetivos='Contenido'>
-						<p>
-							Básicamente, lo descrito en el artículo del pre-plan de la JCB
-						</p>
-					</section>
+				<section objetivos='contenido del capítulo'>
+					<ul>
+						<li>
+							En primer lugar, describiríamos toda la parte del Utrecht que se explicó en el artículo sobre las librerías
+						</li>
+						<li>
+							En otra parte, todo el trabajo hecho para Bebig con la parametrización del fletcher de Mick
+						</li>
+						<li>
+							Quizá sería mejor invertir el orden de los puntos anteriores, ya que, aunque cronológicamente el Fletcher fue después, podemos añadir al utrecht la misma parametrización que hicimos para el Fletcher
+						</li>
+					</ul>
 				</section>
-				<section objetivos='Agujas no rectas'>
-					<section objetivos='Título'>
-						<h2>Caso de agujas no rectas</h2>
-					</section>
-					<section objetivos='Contenido del capítulo'>
-						<p>
-							Para darle completitud al trabajo, creo que deberíamos hacer algún comentario sobre la linealidad o no linealidad de las agujas. Está claro que en el caso de usar agujas de titanio estas permanecerán rectas, pero no así en los casos de agujas plasticas. Podríamos dar algunas ideas sobre cómo acometer estas cuestiones.
-						</p>
-					</section>
+			</section>
+			<section objetivos='Marcadores en resonancia'>
+				<section objetivos='Título del capítulo'>
+					<h2>Marcadores en resonancia</h2>
 				</section>
-			</div>
+				<section objetivos='Materiales marcadores en resonancia'>
+					<p>
+						Hablar de los materiales visibles en resonancia y de las soluciones comerciales que existen
+					</p>
+				</section>
+				<section objetivos='dummies en resonancia y el problema de las agujas'>
+					<ul>
+						<li>
+							En primer lugar, nombrar las dummies para el Utrecht
+						</li>
+						<li>
+							Explicar el problema que aparece al intentar hacer lo mismo para agujas
+						</li>
+					</ul>
+				</section>
+				<section objetivos='concepto de dummies puntuales'>
+					<p>
+						Explicar que, con la información contenida en las librerías, sumado a dummies puntuales, podemos posicionar aplicadores sin verlos completamente
+					</p>
+				</section>
+				<section objetivos='Modelos e impresión 3D'>
+					<p>
+						Unas pinceladas sobre diseño 3D unido a las ventajas que nos ofrece la impresión 3d para prototipado o para dummies específicas para aplicadores en braquiterapia
+					</p>
+				</section>
+			</section>
+			<section objetivos='Planes Virtuales'>
+				<section objetivos='Título'>
+					<h2>Planes Virtuales</h2>
+				</section>
+				<section objetivos='Contenido'>
+					<p>
+						Básicamente, lo descrito en el artículo del pre-plan de la JCB
+					</p>
+				</section>
+			</section>
+			<section objetivos='Agujas no rectas'>
+				<section objetivos='Título'>
+					<h2>Caso de agujas no rectas</h2>
+				</section>
+				<section objetivos='Contenido del capítulo'>
+					<p>
+						Para darle completitud al trabajo, creo que deberíamos hacer algún comentario sobre la linealidad o no linealidad de las agujas. Está claro que en el caso de usar agujas de titanio estas permanecerán rectas, pero no así en los casos de agujas plasticas.
+						Podríamos dar algunas ideas sobre cómo acometer estas cuestiones.
+					</p>
+				</section>
+			</section>
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
 
-				math: {
-					//mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-					config: 'TeX-AMS_HTML-full'
+			math: {
+				//mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+				config: 'TeX-AMS_HTML-full'
+			},
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
 				},
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }},
-					{ src: 'plugin/math/math.js', async: true }
-				]
-			});
-		</script>
-	</body>
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function() {
+						hljs.initHighlightingOnLoad();
+					}
+				},
+				{
+					src: 'plugin/math/math.js',
+					async: true
+				}
+			]
+		});
+	</script>
+</body>
+
 </html>
